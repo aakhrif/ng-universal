@@ -1,0 +1,11 @@
+  document.querySelector('my-webcomponent').dispatchEvent(new CustomEvent('someEvent', {
+    detail: { e.g. someVariable: true, e.g. someObject: Object }
+  }));
+
+  document.getElementById("my-webcomponent").addEventListener(
+    'emitted-something', function (e) {
+      var Object or var = e.detail;
+      }
+      //force update of all views
+      $scope.$apply();
+    });
